@@ -1,4 +1,5 @@
 import { CloudUpload, Lock, Server } from "lucide-react";
+import Image from "next/image";
 
 const features = [
   {
@@ -55,7 +56,7 @@ export default function Features3() {
               </dl>
             </div>
           </div>
-          <img
+          <Image
             alt="Product screenshot"
             src="https://tailwindui.com/plus/img/component-images/dark-project-app-screenshot.png"
             width={2432}
