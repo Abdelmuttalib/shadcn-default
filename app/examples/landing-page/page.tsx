@@ -7,7 +7,7 @@ import { Check, CheckCircle2 } from "lucide-react";
 
 import { ReactElement } from "react";
 
-export function Container({
+function Container({
   children,
   className,
 }: {
