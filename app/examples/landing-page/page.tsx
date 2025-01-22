@@ -248,7 +248,7 @@ export default function Landing1() {
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan",
                     icon: "https://cdn.shadcn.com/assets/icons/social-media.svg",
                   },
-                ].map((item, index) => (
+                ].map((item) => (
                   <div
                     key={item.title}
                     className={cn(
