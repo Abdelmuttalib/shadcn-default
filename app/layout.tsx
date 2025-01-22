@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ThemeButton } from "@/components/theme-button";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,10 +27,30 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} font-[family-name:var(--font-geist-sans)] antialiased`}
       >
+        <div className="fixed right-2 top-2">
+          <ThemeButton />
+        </div>
+        <TailwindIndicator />
         {children}
+        {/* <ThemeProvider>{children}</ThemeProvider> */}
       </body>
     </html>
+  );
+}
+
+export function TailwindIndicator() {
+  // if (process.env.NODE_ENV === "production") return null;
+
+  return (
+    <div className="fixed bottom-1 right-1 z-50 print:hidden flex h-6 w-6 items-center justify-center rounded bg-foreground p-3 font-mono text-xs font-semibold text-background">
+      <div className="block sm:hidden">xs</div>
+      <div className="hidden sm:block md:hidden">sm</div>
+      <div className="hidden md:block lg:hidden">md</div>
+      <div className="hidden lg:block xl:hidden">lg</div>
+      <div className="hidden xl:block 2xl:hidden">xl</div>
+      <div className="hidden 2xl:block">2xl</div>
+    </div>
   );
 }
