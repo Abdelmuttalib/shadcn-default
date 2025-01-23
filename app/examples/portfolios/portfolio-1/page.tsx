@@ -383,7 +383,7 @@ const testimonialsData = [
   {
     name: "Josh Grazioso",
     content:
-      "I'm absolutely floored by the level of care and attention to detail Eliana has put into this project and for one can guarantee that we will be a return customer.",
+      "I&apos;m absolutely floored by the level of care and attention to detail Eliana has put into this project and for one can guarantee that we will be a return customer.",
     avatar:
       "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
   },
@@ -869,10 +869,11 @@ export default function Portfolio1() {
 
                   <p className="mt-1 text-sm text-muted-foreground">
                     This is an excellent company and they reward their
-                    employees. It's becoming a big company but it's still
-                    private, so the culture is as good as it gets at 1,000+
-                    employees if you ask me. Managers are still adapting to the
-                    growth I think, but everyone has to. Great place to work.
+                    employees. It&apos;s becoming a big company but it&apos;s
+                    still private, so the culture is as good as it gets at
+                    1,000+ employees if you ask me. Managers are still adapting
+                    to the growth I think, but everyone has to. Great place to
+                    work.
                   </p>
 
                   <div className="mt-3">
@@ -894,7 +895,7 @@ export default function Portfolio1() {
                             </h3>
                             <p className="mt-1 text-sm text-muted-foreground">
                               Produce professional, reliable streams easily
-                              leveraging Mailchimp's innovative broadcast
+                              leveraging Mailchimp&apos;s innovative broadcast
                               studio.
                             </p>
                           </div>
@@ -1124,7 +1125,7 @@ export default function Portfolio1() {
                 </h3>
 
                 <p className="font-semibold text-sm text-foreground">
-                  Master's degree in Computer Software Engineering
+                  Master&apos;s degree in Computer Software Engineering
                 </p>
 
                 <p className="mt-1 text-sm text-muted-foreground">
@@ -1168,7 +1169,7 @@ export default function Portfolio1() {
                 </h3>
 
                 <p className="font-semibold text-sm text-foreground">
-                  Bachelor's degree in Computer Software Engineering
+                  Bachelor&apos;s degree in Computer Software Engineering
                 </p>
 
                 <p className="mt-1 text-sm text-muted-foreground">
@@ -1207,7 +1208,7 @@ export default function Portfolio1() {
                 </h5>
                 <p className="mt-1 text-sm text-muted-foreground">
                   With the aim of optimizing customer interactions and boosting
-                  brand loyalty, the team at Preline leveraged Mailchimp's
+                  brand loyalty, the team at Preline leveraged Mailchimp&apos;s
                   powerful tools and expertise to deliver exceptional results.
                 </p>
                 <p className="mt-1">
