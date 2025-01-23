@@ -28,7 +28,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-[family-name:var(--font-geist-sans)] antialiased`}
       >
-        <div className="fixed right-2 top-2">
+        <div className="fixed right-2 top-2 z-[9999]">
           <ThemeButton />
         </div>
         {/* <TailwindIndicator /> */}
