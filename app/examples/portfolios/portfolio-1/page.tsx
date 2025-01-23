@@ -1,8 +1,8 @@
+import * as React from "react";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
-import { MailIcon, TwitterIcon } from "lucide-react";
 import Image from "next/image";
-import * as React from "react";
+import { Button } from "@/components/ui/button";
 
 function Menu() {
   return (
@@ -1972,7 +1972,25 @@ export default function Portfolio1() {
                     placeholder="Enter your email"
                   />
                 </div>
-                <a
+                <Button type="button" size={"sm"}>
+                  Join
+                  <svg
+                    className="shrink-0 size-3.5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </Button>
+                {/* <a
                   className="w-full sm:w-auto whitespace-nowrap py-2 px-2.5 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-md border border-transparent bg-gray-800 text-white hover:bg-gray-900 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:bg-white dark:text-neutral-800 dark:hover:bg-neutral-200"
                   href="#"
                 >
@@ -1992,10 +2010,10 @@ export default function Portfolio1() {
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
-                </a>
+                </a> */}
               </div>
               <p className="mt-2 text-xs text-muted-foreground">
-                No spam, unsubscribe at any time.
+                unsubscribe at any time.
               </p>
             </form>
           </div>
