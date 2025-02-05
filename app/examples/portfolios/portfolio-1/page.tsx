@@ -10,7 +10,7 @@ const socials = [
     href: "#",
     icon: (
       <svg
-        className="shrink-0 size-3.5"
+        className="size-3.5 shrink-0"
         xmlns="http://www.w3.org/2000/svg"
         width="24"
         height="24"
@@ -32,7 +32,7 @@ const socials = [
     href: "#",
     icon: (
       <svg
-        className="shrink-0 size-3.5"
+        className="size-3.5 shrink-0"
         width="24"
         height="24"
         viewBox="0 0 24 24"
@@ -76,7 +76,7 @@ const skillsData = [
         name: "Figma",
         icon: (
           <svg
-            className="shrink-0 size-4 me-1"
+            className="me-1 size-4 shrink-0"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -99,7 +99,7 @@ const skillsData = [
         name: "Sketch",
         icon: (
           <svg
-            className="shrink-0 size-4 me-1"
+            className="me-1 size-4 shrink-0"
             width="22"
             height="22"
             viewBox="0 0 22 22"
@@ -124,7 +124,7 @@ const skillsData = [
         name: "HTML",
         icon: (
           <svg
-            className="shrink-0 size-4 me-1"
+            className="me-1 size-4 shrink-0"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -152,7 +152,7 @@ const skillsData = [
         name: "CSS",
         icon: (
           <svg
-            className="shrink-0 size-4 me-1"
+            className="me-1 size-4 shrink-0"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -183,7 +183,7 @@ const skillsData = [
         name: "Tailwind CSS",
         icon: (
           <svg
-            className="shrink-0 size-4 me-1"
+            className="me-1 size-4 shrink-0"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -203,7 +203,7 @@ const skillsData = [
         name: "React",
         icon: (
           <svg
-            className="shrink-0 size-4 me-1"
+            className="me-1 size-4 shrink-0"
             width="160"
             height="143"
             viewBox="0 0 160 143"
@@ -224,7 +224,7 @@ const skillsData = [
         name: "Vue",
         icon: (
           <svg
-            className="shrink-0 size-4 me-1"
+            className="me-1 size-4 shrink-0"
             width="164"
             height="143"
             viewBox="0 0 164 143"
@@ -253,7 +253,7 @@ const skillsData = [
         name: "Notion",
         icon: (
           <svg
-            className="shrink-0 size-4 me-1"
+            className="me-1 size-4 shrink-0"
             width="32"
             height="32"
             viewBox="0 0 32 32"
@@ -277,7 +277,7 @@ const skillsData = [
         name: "Mailchimp",
         icon: (
           <svg
-            className="shrink-0 size-4 me-1"
+            className="me-1 size-4 shrink-0"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -299,7 +299,7 @@ const skillsData = [
         name: "Slack",
         icon: (
           <svg
-            className="shrink-0 size-4 me-1"
+            className="me-1 size-4 shrink-0"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -399,12 +399,12 @@ const testimonialsData = [
 export default function Portfolio1() {
   return (
     <div>
-      <header className="sticky top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm">
-        <nav className="mt-4 relative max-w-2xl w-full bg-background/[0.7] backdrop-blur border rounded-[2rem] mx-2 py-2.5 sm:flex sm:items-center sm:justify-between sm:py-0 sm:px-4 sm:mx-auto">
-          <div className="px-4 md:px-0 flex justify-between items-center">
+      <header className="sticky inset-x-0 top-0 z-50 flex w-full flex-wrap text-sm md:flex-nowrap md:justify-start">
+        <nav className="bg-background/[0.7] relative mx-2 mt-4 w-full max-w-2xl rounded-[2rem] border py-2.5 backdrop-blur sm:mx-auto sm:flex sm:items-center sm:justify-between sm:px-4 sm:py-0">
+          <div className="flex items-center justify-between px-4 md:px-0">
             <div className="flex items-center">
               <a
-                className="flex-none rounded-md text-xl inline-block font-bold focus:outline-none focus:opacity-80"
+                className="inline-block flex-none rounded-md text-xl font-bold focus:opacity-80 focus:outline-none"
                 href="#"
                 aria-label="Preline"
               >
@@ -415,17 +415,17 @@ export default function Portfolio1() {
 
           <div
             id="hs-navbar-header-floating"
-            className="hs-collapse overflow-hidden transition-all duration-300 basis-full grow sm:block hidden"
+            className="hs-collapse hidden grow basis-full overflow-hidden transition-all duration-300 sm:block"
             aria-labelledby="hs-navbar-header-floating-collapse"
           >
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-end gap-2 sm:gap-3 mt-3 sm:mt-0 py-2 sm:py-0 sm:ps-7">
+            <div className="mt-3 flex flex-col gap-2 py-2 sm:mt-0 sm:flex-row sm:items-center sm:justify-end sm:gap-3 sm:py-0 sm:ps-7">
               {navLinks.map((link, idx) => (
                 <a
                   key={link.label}
                   className={cn(
-                    "py-0.5 sm:py-3 px-4 sm:px-1 border-s-2 sm:border-s-0 sm:border-b-2 border-transparent text-muted-foreground focus:outline-none hover:text-foreground",
+                    "border-s-2 border-transparent px-4 py-0.5 text-muted-foreground hover:text-foreground focus:outline-none sm:border-b-2 sm:border-s-0 sm:px-1 sm:py-3",
                     {
-                      "text-foreground border-foreground font-medium":
+                      "border-foreground font-medium text-foreground":
                         idx === 0,
                     }
                   )}
@@ -441,11 +441,11 @@ export default function Portfolio1() {
       </header>
 
       <main id="content">
-        <div className="w-full max-w-2xl mx-auto pt-10 md:pt-16 px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto w-full max-w-2xl px-4 pt-10 sm:px-6 md:pt-16 lg:px-8">
           <div className="flex items-center gap-x-3">
             <div className="shrink-0">
               <img
-                className="shrink-0 size-16 rounded-full"
+                className="size-16 shrink-0 rounded-full"
                 src="/images/avatar-1.jpeg"
                 alt="Avatar"
               />
@@ -480,7 +480,7 @@ export default function Portfolio1() {
                 <li key={social.name} className="flex items-center gap-x-2.5">
                   {social.icon}
                   <a
-                    className="text-[13px] text-muted-foreground underline hover:text-foreground hover:decoration-2 focus:outline-none focus:decoration-2"
+                    className="text-[13px] text-muted-foreground underline hover:text-foreground hover:decoration-2 focus:decoration-2 focus:outline-none"
                     href={social.href}
                   >
                     {/* elianagarcia997@about.me */}
@@ -494,20 +494,20 @@ export default function Portfolio1() {
           <div className="mt-10 sm:mt-14">
             <h2 className="mb-5 font-medium text-foreground">Projects</h2>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
               <a
-                className="group block relative overflow-hidden rounded-lg"
+                className="group relative block overflow-hidden rounded-lg"
                 href="#"
               >
                 <img
-                  className="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
+                  className="size-40 w-full rounded-lg bg-gray-100 object-cover dark:bg-neutral-800"
                   src="https://images.unsplash.com/photo-1656618724305-a4257e46e847?q=80&amp;w=320&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Project"
                 />
-                <div className="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
-                  <div className="flex items-center gap-x-1 py-1 px-2 bg-white border text-gray-800 rounded-lg dark:bg-neutral-900 dark:text-neutral-200">
+                <div className="absolute bottom-1 end-1 opacity-0 transition group-hover:opacity-100">
+                  <div className="flex items-center gap-x-1 rounded-lg border bg-white px-2 py-1 text-gray-800 dark:bg-neutral-900 dark:text-neutral-200">
                     <svg
-                      className="shrink-0 size-3"
+                      className="size-3 shrink-0"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -527,18 +527,18 @@ export default function Portfolio1() {
               </a>
 
               <a
-                className="group block relative overflow-hidden rounded-lg"
+                className="group relative block overflow-hidden rounded-lg"
                 href="#"
               >
                 <img
-                  className="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
+                  className="size-40 w-full rounded-lg bg-gray-100 object-cover dark:bg-neutral-800"
                   src="https://images.unsplash.com/photo-1616427592793-67b858804534?q=80&amp;w=320&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Project"
                 />
-                <div className="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
-                  <div className="flex items-center gap-x-1 py-1 px-2 bg-white border text-gray-800 rounded-lg dark:bg-neutral-900 dark:text-neutral-200">
+                <div className="absolute bottom-1 end-1 opacity-0 transition group-hover:opacity-100">
+                  <div className="flex items-center gap-x-1 rounded-lg border bg-white px-2 py-1 text-gray-800 dark:bg-neutral-900 dark:text-neutral-200">
                     <svg
-                      className="shrink-0 size-3"
+                      className="size-3 shrink-0"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -558,18 +558,18 @@ export default function Portfolio1() {
               </a>
 
               <a
-                className="group block relative overflow-hidden rounded-lg"
+                className="group relative block overflow-hidden rounded-lg"
                 href="#"
               >
                 <img
-                  className="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
+                  className="size-40 w-full rounded-lg bg-gray-100 object-cover dark:bg-neutral-800"
                   src="https://images.unsplash.com/photo-1516131206008-dd041a9764fd?q=80&amp;w=320&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Project"
                 />
-                <div className="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
-                  <div className="flex items-center gap-x-1 py-1 px-2 bg-white border text-gray-800 rounded-lg dark:bg-neutral-900 dark:text-neutral-200">
+                <div className="absolute bottom-1 end-1 opacity-0 transition group-hover:opacity-100">
+                  <div className="flex items-center gap-x-1 rounded-lg border bg-white px-2 py-1 text-gray-800 dark:bg-neutral-900 dark:text-neutral-200">
                     <svg
-                      className="shrink-0 size-3"
+                      className="size-3 shrink-0"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -589,18 +589,18 @@ export default function Portfolio1() {
               </a>
 
               <a
-                className="group block relative overflow-hidden rounded-lg"
+                className="group relative block overflow-hidden rounded-lg"
                 href="#"
               >
                 <img
-                  className="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
+                  className="size-40 w-full rounded-lg bg-gray-100 object-cover dark:bg-neutral-800"
                   src="https://images.unsplash.com/photo-1707760696486-2a2cd7e0b6a6?q=80&amp;w=320&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Project"
                 />
-                <div className="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
-                  <div className="flex items-center gap-x-1 py-1 px-2 bg-white border text-gray-800 rounded-lg dark:bg-neutral-900 dark:text-neutral-200">
+                <div className="absolute bottom-1 end-1 opacity-0 transition group-hover:opacity-100">
+                  <div className="flex items-center gap-x-1 rounded-lg border bg-white px-2 py-1 text-gray-800 dark:bg-neutral-900 dark:text-neutral-200">
                     <svg
-                      className="shrink-0 size-3"
+                      className="size-3 shrink-0"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -620,18 +620,18 @@ export default function Portfolio1() {
               </a>
 
               <a
-                className="group block relative overflow-hidden rounded-lg"
+                className="group relative block overflow-hidden rounded-lg"
                 href="#"
               >
                 <img
-                  className="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
+                  className="size-40 w-full rounded-lg bg-gray-100 object-cover dark:bg-neutral-800"
                   src="https://images.unsplash.com/photo-1585159812596-fac104f2f069?q=80&amp;w=320&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Project"
                 />
-                <div className="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
-                  <div className="flex items-center gap-x-1 py-1 px-2 bg-white border text-gray-800 rounded-lg dark:bg-neutral-900 dark:text-neutral-200">
+                <div className="absolute bottom-1 end-1 opacity-0 transition group-hover:opacity-100">
+                  <div className="flex items-center gap-x-1 rounded-lg border bg-white px-2 py-1 text-gray-800 dark:bg-neutral-900 dark:text-neutral-200">
                     <svg
-                      className="shrink-0 size-3"
+                      className="size-3 shrink-0"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -651,18 +651,18 @@ export default function Portfolio1() {
               </a>
 
               <a
-                className="group block relative overflow-hidden rounded-lg"
+                className="group relative block overflow-hidden rounded-lg"
                 href="#"
               >
                 <img
-                  className="w-full size-40 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
+                  className="size-40 w-full rounded-lg bg-gray-100 object-cover dark:bg-neutral-800"
                   src="https://images.unsplash.com/photo-1654131300276-db70adf4f85d?q=80&amp;w=320&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt="Project"
                 />
-                <div className="absolute bottom-1 end-1 opacity-0 group-hover:opacity-100 transition">
-                  <div className="flex items-center gap-x-1 py-1 px-2 bg-white border text-gray-800 rounded-lg dark:bg-neutral-900 dark:text-neutral-200">
+                <div className="absolute bottom-1 end-1 opacity-0 transition group-hover:opacity-100">
+                  <div className="flex items-center gap-x-1 rounded-lg border bg-white px-2 py-1 text-gray-800 dark:bg-neutral-900 dark:text-neutral-200">
                     <svg
-                      className="shrink-0 size-3"
+                      className="size-3 shrink-0"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -686,7 +686,7 @@ export default function Portfolio1() {
           <div className="mt-10 sm:mt-14">
             <h2 className="mb-3 font-medium text-foreground">Testimonials</h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-3 border-y divide-y sm:divide-y-0 sm:divide-x divide-gray-200 dark:divide-neutral-700">
+            <div className="grid grid-cols-1 gap-x-3 divide-y divide-gray-200 border-y dark:divide-neutral-700 sm:grid-cols-2 sm:divide-x sm:divide-y-0">
               {/* sm:-ms-4  */}
               {testimonialsData.map((testimonial, idx) => (
                 <div
@@ -703,7 +703,7 @@ export default function Portfolio1() {
                     <footer className="mt-3">
                       <div className="flex items-center gap-x-2">
                         <Image
-                          className="shrink-0 size-5 rounded-full"
+                          className="size-5 shrink-0 rounded-full"
                           src={testimonial.avatar}
                           alt={`${testimonial.name} avatar`}
                           width={32}
@@ -729,7 +729,7 @@ export default function Portfolio1() {
               {skillsData.map((skill) => (
                 <dl
                   key={skill.section}
-                  className="flex flex-col sm:flex-row gap-1"
+                  className="flex flex-col gap-1 sm:flex-row"
                 >
                   <dt className="min-w-40">
                     <span className="block text-sm text-muted-foreground">
@@ -741,7 +741,7 @@ export default function Portfolio1() {
                       {skill.items.map((skillItem) => (
                         <li
                           key={skillItem.name}
-                          className="me-1 after:content-[','] inline-flex items-center text-sm text-foreground"
+                          className="me-1 inline-flex items-center text-sm text-foreground after:content-[',']"
                         >
                           {/* icon */}
                           {skillItem.icon}
@@ -763,10 +763,10 @@ export default function Portfolio1() {
 
             <div>
               <div className="group relative flex gap-x-5">
-                <div className="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
-                  <div className="relative z-10 size-6 flex justify-center items-center">
+                <div className="relative after:absolute after:bottom-2 after:start-3 after:top-8 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 group-last:after:hidden dark:after:bg-neutral-700">
+                  <div className="relative z-10 flex size-6 items-center justify-center">
                     <svg
-                      className="shrink-0 size-6 text-muted-foreground"
+                      className="size-6 shrink-0 text-muted-foreground"
                       width="32"
                       height="32"
                       viewBox="0 0 32 32"
@@ -792,7 +792,7 @@ export default function Portfolio1() {
                     2023 - Present
                   </h3>
 
-                  <p className="font-semibold text-sm text-foreground">
+                  <p className="text-sm font-semibold text-foreground">
                     Web Designer &amp; Web Developer
                   </p>
 
@@ -801,7 +801,7 @@ export default function Portfolio1() {
                     mutual understanding of expectations and performance.
                   </p>
 
-                  <ul className="list-disc ms-6 mt-3 space-y-1.5">
+                  <ul className="ms-6 mt-3 list-disc space-y-1.5">
                     <li className="ps-1 text-sm text-muted-foreground">
                       Designed template UIs and design systems in Figma.
                     </li>
@@ -825,10 +825,10 @@ export default function Portfolio1() {
               </div>
 
               <div className="group relative flex gap-x-5">
-                <div className="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
-                  <div className="relative z-10 size-6 flex justify-center items-center">
+                <div className="relative after:absolute after:bottom-2 after:start-3 after:top-8 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 group-last:after:hidden dark:after:bg-neutral-700">
+                  <div className="relative z-10 flex size-6 items-center justify-center">
                     <svg
-                      className="shrink-0 size-6 text-muted-foreground"
+                      className="size-6 shrink-0 text-muted-foreground"
                       width="32"
                       height="32"
                       viewBox="0 0 32 32"
@@ -863,7 +863,7 @@ export default function Portfolio1() {
                     2021 - 2023
                   </h3>
 
-                  <p className="font-semibold text-sm text-foreground">
+                  <p className="text-sm font-semibold text-foreground">
                     Senior Software Engineer at Mailchimp
                   </p>
 
@@ -878,19 +878,19 @@ export default function Portfolio1() {
 
                   <div className="mt-3">
                     <a
-                      className="block border rounded-lg hover:shadow-sm focus:outline-none"
+                      className="block rounded-lg border hover:shadow-sm focus:outline-none"
                       href="#"
                     >
                       <div className="relative flex items-center overflow-hidden">
                         <img
-                          className="w-32 sm:w-48 h-full absolute inset-0 object-cover rounded-s-lg"
+                          className="absolute inset-0 h-full w-32 rounded-s-lg object-cover sm:w-48"
                           src="https://images.unsplash.com/photo-1661956600655-e772b2b97db4?q=80&amp;w=560&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                           alt="Blog Image"
                         />
 
-                        <div className="grow p-4 ms-32 sm:ms-48">
-                          <div className="min-h-24 flex flex-col justify-center">
-                            <h3 className="font-semibold text-sm text-gray-800 dark:text-neutral-300">
+                        <div className="ms-32 grow p-4 sm:ms-48">
+                          <div className="flex min-h-24 flex-col justify-center">
+                            <h3 className="text-sm font-semibold text-gray-800 dark:text-neutral-300">
                               Studio by Mailchimp
                             </h3>
                             <p className="mt-1 text-sm text-muted-foreground">
@@ -907,10 +907,10 @@ export default function Portfolio1() {
               </div>
 
               <div className="group relative flex gap-x-5">
-                <div className="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
-                  <div className="relative z-10 size-6 flex justify-center items-center">
+                <div className="relative after:absolute after:bottom-2 after:start-3 after:top-8 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 group-last:after:hidden dark:after:bg-neutral-700">
+                  <div className="relative z-10 flex size-6 items-center justify-center">
                     <svg
-                      className="shrink-0 size-6 text-muted-foreground"
+                      className="size-6 shrink-0 text-muted-foreground"
                       width="32"
                       height="32"
                       viewBox="0 0 32 32"
@@ -950,7 +950,7 @@ export default function Portfolio1() {
                     2011 - 2021
                   </h3>
 
-                  <p className="font-semibold text-sm text-foreground">
+                  <p className="text-sm font-semibold text-foreground">
                     Junior Software Engineer at Slack
                   </p>
 
@@ -963,10 +963,10 @@ export default function Portfolio1() {
               </div>
 
               <div className="group relative flex gap-x-5">
-                <div className="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 dark:after:bg-neutral-700">
-                  <div className="relative z-10 size-6 flex justify-center items-center">
+                <div className="relative after:absolute after:bottom-2 after:start-3 after:top-8 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 group-last:after:hidden dark:after:bg-neutral-700">
+                  <div className="relative z-10 flex size-6 items-center justify-center">
                     <svg
-                      className="shrink-0 size-6 text-foreground"
+                      className="size-6 shrink-0 text-foreground"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -990,11 +990,11 @@ export default function Portfolio1() {
                     2010 - 2011
                   </h3>
 
-                  <p className="font-semibold text-sm text-foreground">
+                  <p className="text-sm font-semibold text-foreground">
                     Freelance Graphic Designer
                   </p>
 
-                  <ul className="list-disc ms-6 mt-3 space-y-1.5">
+                  <ul className="ms-6 mt-3 list-disc space-y-1.5">
                     <li className="ps-1 text-sm text-muted-foreground">
                       Worked with a diverse range of clients, delivering
                       tailored design solutions.
@@ -1018,10 +1018,10 @@ export default function Portfolio1() {
           <div className="mt-10 sm:mt-14">
             <h2 className="mb-3 font-medium text-foreground">Education</h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div className="p-4 border rounded-lg">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+              <div className="rounded-lg border p-4">
                 <svg
-                  className="shrink-0 size-10 mb-3"
+                  className="mb-3 size-10 shrink-0"
                   width="400"
                   height="400"
                   viewBox="0 0 400 400"
@@ -1124,7 +1124,7 @@ export default function Portfolio1() {
                   2012 - 2013
                 </h3>
 
-                <p className="font-semibold text-sm text-foreground">
+                <p className="text-sm font-semibold text-foreground">
                   Master&apos;s degree in Computer Software Engineering
                 </p>
 
@@ -1133,9 +1133,9 @@ export default function Portfolio1() {
                 </p>
               </div>
 
-              <div className="p-4 border rounded-lg">
+              <div className="rounded-lg border p-4">
                 <svg
-                  className="shrink-0 size-10 mb-3"
+                  className="mb-3 size-10 shrink-0"
                   width="123"
                   height="147"
                   viewBox="0 0 123 147"
@@ -1168,7 +1168,7 @@ export default function Portfolio1() {
                   2009 - 2012
                 </h3>
 
-                <p className="font-semibold text-sm text-foreground">
+                <p className="text-sm font-semibold text-foreground">
                   Bachelor&apos;s degree in Computer Software Engineering
                 </p>
 
@@ -1185,7 +1185,7 @@ export default function Portfolio1() {
             <ul className="space-y-10">
               <li>
                 <p className="mb-2 text-sm text-muted-foreground">2024</p>
-                <h5 className="font-medium text-sm text-foreground">
+                <h5 className="text-sm font-medium text-foreground">
                   The complete guide to OKRs
                 </h5>
                 <p className="mt-1 text-sm text-muted-foreground">
@@ -1193,7 +1193,7 @@ export default function Portfolio1() {
                 </p>
                 <p className="mt-1">
                   <a
-                    className="text-sm text-muted-foreground underline hover:text-foreground hover:decoration-2 focus:outline-none focus:decoration-2"
+                    className="text-sm text-muted-foreground underline hover:text-foreground hover:decoration-2 focus:decoration-2 focus:outline-none"
                     href="#"
                   >
                     Continue reading
@@ -1203,7 +1203,7 @@ export default function Portfolio1() {
 
               <li>
                 <p className="mb-2 text-sm text-muted-foreground">2024</p>
-                <h5 className="font-medium text-sm text-foreground">
+                <h5 className="text-sm font-medium text-foreground">
                   Enhancement in Customer Engagement
                 </h5>
                 <p className="mt-1 text-sm text-muted-foreground">
@@ -1213,7 +1213,7 @@ export default function Portfolio1() {
                 </p>
                 <p className="mt-1">
                   <a
-                    className="text-sm text-muted-foreground underline hover:text-foreground hover:decoration-2 focus:outline-none focus:decoration-2"
+                    className="text-sm text-muted-foreground underline hover:text-foreground hover:decoration-2 focus:decoration-2 focus:outline-none"
                     href="#"
                   >
                     Continue reading
@@ -1223,7 +1223,7 @@ export default function Portfolio1() {
 
               <li>
                 <p className="mb-2 text-sm text-muted-foreground">2023</p>
-                <h5 className="font-medium text-sm text-foreground">
+                <h5 className="text-sm font-medium text-foreground">
                   How Google Assistant now helps you record stories for kids
                 </h5>
                 <p className="mt-1 text-sm text-muted-foreground">
@@ -1232,7 +1232,7 @@ export default function Portfolio1() {
                 </p>
                 <p className="mt-1">
                   <a
-                    className="text-sm text-muted-foreground underline hover:text-foreground hover:decoration-2 focus:outline-none focus:decoration-2"
+                    className="text-sm text-muted-foreground underline hover:text-foreground hover:decoration-2 focus:decoration-2 focus:outline-none"
                     href="#"
                   >
                     Continue reading
@@ -1246,14 +1246,14 @@ export default function Portfolio1() {
             <h2 className="mb-5 font-medium text-foreground">Subscribe</h2>
 
             <form>
-              <div className="p-1.5 flex flex-col sm:flex-row items-center gap-2 border rounded-lg">
+              <div className="flex flex-col items-center gap-2 rounded-lg border p-1.5 sm:flex-row">
                 <div className="relative w-full">
                   <label htmlFor="hero-input" className="sr-only">
                     Subscribe
                   </label>
-                  <div className="absolute inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-3">
+                  <div className="pointer-events-none absolute inset-y-0 start-0 z-20 flex items-center ps-3">
                     <svg
-                      className="shrink-0 size-4 text-muted-foreground"
+                      className="size-4 shrink-0 text-muted-foreground"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -1272,14 +1272,14 @@ export default function Portfolio1() {
                     type="text"
                     id="hero-input"
                     name="hero-input"
-                    className="py-2 ps-9 pe-3"
+                    className="py-2 pe-3 ps-9"
                     placeholder="Enter your email"
                   />
                 </div>
                 <Button type="button" size={"sm"}>
                   Join
                   <svg
-                    className="shrink-0 size-3.5"
+                    className="size-3.5 shrink-0"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -1324,17 +1324,19 @@ export default function Portfolio1() {
         </div>
       </main>
 
-      <footer className="w-full max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="py-6 border-t">
-          <div className="flex flex-wrap justify-between items-center gap-2">
+      <footer className="mx-auto w-full max-w-2xl px-4 sm:px-6 lg:px-8">
+        <div className="border-t py-6">
+          <div className="flex flex-wrap items-center justify-between gap-2">
             <div>
-              <p className="text-xs text-muted-foreground">© 2025 Portfolio.</p>
+              <p className="text-xs text-muted-foreground">
+                © 2025 Portfolio.
+              </p>
             </div>
 
             <ul className="flex flex-wrap items-center">
-              <li className="inline-block relative pe-4 text-xs last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-1.5 before:-translate-y-1/2 before:size-[3px] before:rounded-full before:bg-gray-400 dark:text-neutral-500 dark:before:bg-neutral-600">
+              <li className="relative inline-block pe-4 text-xs before:absolute before:end-1.5 before:top-1/2 before:size-[3px] before:-translate-y-1/2 before:rounded-full before:bg-gray-400 last:pe-0 last-of-type:before:hidden dark:text-neutral-500 dark:before:bg-neutral-600">
                 <a
-                  className="text-xs text-muted-foreground underline hover:text-foreground hover:decoration-2 focus:outline-none focus:decoration-2"
+                  className="text-xs text-muted-foreground underline hover:text-foreground hover:decoration-2 focus:decoration-2 focus:outline-none"
                   href="#"
                 >
                   X (Twitter)
@@ -1343,7 +1345,7 @@ export default function Portfolio1() {
 
               <li className="inline-block pe-4 text-xs">
                 <a
-                  className="text-xs text-muted-foreground underline hover:text-foreground hover:decoration-2 focus:outline-none focus:decoration-2"
+                  className="text-xs text-muted-foreground underline hover:text-foreground hover:decoration-2 focus:decoration-2 focus:outline-none"
                   href="#"
                 >
                   Github

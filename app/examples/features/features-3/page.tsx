@@ -42,7 +42,7 @@ export default function Features3() {
                   cupiditate blanditiis ratione.
                 </p>
               </div>
-              <dl className="mt-10 text-base/7 text-muted-foreground lg:max-w-none grid lg:grid-cols-3 border rounded-lg bg-muted/30">
+              <dl className="bg-muted/30 mt-10 grid rounded-lg border text-base/7 text-muted-foreground lg:max-w-none lg:grid-cols-3">
                 {features.map((feature, index) => (
                   <div
                     key={feature.name}
