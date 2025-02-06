@@ -13,6 +13,7 @@ export function ThemeButton() {
         document.documentElement.classList.toggle("dark");
       }}
       className="h-8 w-8"
+      variant={"secondary"}
     >
       <MoonIcon />
     </Button>
