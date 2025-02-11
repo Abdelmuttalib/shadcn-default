@@ -22,7 +22,7 @@ const features = [
   },
 ];
 
-export default function Features3() {
+export default function Features() {
   return (
     <div className="overflow-hidden bg-background py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -30,7 +30,7 @@ export default function Features3() {
           <div className="lg:pr-8 lg:pt-4">
             <div>
               <div className="lg:max-w-lg">
-                <h2 className="text-base/7 font-semibold text-indigo-600 dark:text-indigo-500">
+                <h2 className="text-base/7 font-semibold text-primary">
                   Deploy faster
                 </h2>
                 <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
@@ -42,7 +42,7 @@ export default function Features3() {
                   cupiditate blanditiis ratione.
                 </p>
               </div>
-              <dl className="bg-muted/30 mt-10 grid rounded-lg border text-base/7 text-muted-foreground lg:max-w-none lg:grid-cols-3">
+              <dl className="mt-10 grid rounded-lg border bg-muted/30 text-base/7 text-muted-foreground lg:max-w-none lg:grid-cols-3">
                 {features.map((feature, index) => (
                   <div
                     key={feature.name}
@@ -54,7 +54,7 @@ export default function Features3() {
                     <dt className="relative inline-flex flex-col gap-2 font-semibold text-foreground">
                       <feature.icon
                         aria-hidden="true"
-                        className="size-6 text-indigo-600 dark:text-indigo-500"
+                        className="size-6 text-primary"
                       />
                       {feature.name}
                     </dt>
