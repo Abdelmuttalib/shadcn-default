@@ -121,7 +121,7 @@ export default function Landing1() {
                     key={item.title}
                     className={cn(
                       "flex flex-col gap-y-4 rounded-lg p-4 lg:p-9",
-                      "border bg-gradient-to-b from-muted/40 to-background"
+                      "from-muted/40 border bg-gradient-to-b to-background"
                     )}
                   >
                     <div className="size-fit rounded-lg p-1 shadow lg:p-2">
@@ -142,7 +142,7 @@ export default function Landing1() {
           </>
         </Container>
       </div>
-      <div className="w-full bg-muted/40 py-28">
+      <div className="bg-muted/40 w-full py-28">
         <Container>
           <div className="page-padding">
             <div className="padding-vertical padding-xhuge">
@@ -179,7 +179,7 @@ export default function Landing1() {
       </div>
       <div className="w-full bg-background py-28">
         <Container>
-          <div className="flex flex-col items-center justify-center gap-4 rounded-lg bg-muted/40 p-8 pt-14 text-center">
+          <div className="bg-muted/40 flex flex-col items-center justify-center gap-4 rounded-lg p-8 pt-14 text-center">
             <Typography
               variant="lg/normal"
               className="max-w-5xl text-muted-foreground"
@@ -300,7 +300,7 @@ export default function Landing1() {
         </Container>
       </div>
 
-      <div className="w-full bg-primary/5 py-28 dark:bg-muted/40">
+      <div className="bg-primary/5 dark:bg-muted/40 w-full py-28">
         <Container>
           <div>
             <div>
@@ -352,7 +352,7 @@ export default function Landing1() {
                     >
                       <div className="flex flex-col">
                         <div className="mb-8 md:mb-16">
-                          <div className="size-fit rounded bg-indigo-100 p-2 dark:border dark:bg-muted/40">
+                          <div className="dark:bg-muted/40 size-fit rounded bg-indigo-100 p-2 dark:border">
                             <img
                               src="https://cdn.prod.website-files.com/63461feeef0aab7c459f3c19/6408c23ae7c9a77ac359fc23_L.svg"
                               loading="lazy"
@@ -390,7 +390,7 @@ export default function Landing1() {
           <div>
             <Container>
               <>
-                <div className="mb-16 mt-36 rounded-lg bg-muted/40 p-16">
+                <div className="bg-muted/40 mb-16 mt-36 rounded-lg p-16">
                   <div className="flex flex-col gap-5 text-center">
                     <div>
                       <Typography
