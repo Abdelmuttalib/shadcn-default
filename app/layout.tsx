@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeButton } from "@/components/theme-button";
+import { ThemeProvider } from "./components/theme-provider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,16 +26,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} font-[family-name:var(--font-geist-sans)] antialiased`}
-      >
-        <div className="fixed right-2 top-2 z-[9999]">
-          <ThemeButton />
-        </div>
-        {/* <TailwindIndicator /> */}
-        {children}
-        {/* <ThemeProvider>{children}</ThemeProvider> */}
-      </body>
+      <ThemeProvider>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} font-[family-name:var(--font-geist-sans)] antialiased`}
+        >
+          <div className="fixed right-2 top-2 z-[9999]">
+            <ThemeButton />
+          </div>
+          {/* <TailwindIndicator /> */}
+          {children}
+          {/* <ThemeProvider>{children}</ThemeProvider> */}
+        </body>
+      </ThemeProvider>
     </html>
   );
 }
